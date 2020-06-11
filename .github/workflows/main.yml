@@ -30,7 +30,7 @@ jobs:
     - name: Github Action for YARN
       uses: Borales/actions-yarn@v2.1.0
       with:
-        cmd: install
+       cmd: install
       
     - name: Perform yarn build
       run: yarn build       
@@ -38,5 +38,6 @@ jobs:
     # Runs a set of commands using the runners shell
     - name: Installing surge
       run: npm install --global surge
+    
     - name: Deploying using surge
       run: surge ./build expense-tracking-app-yaseenghanchi.surge.sh/ --token ${{ secrets.SURGE_TOKEN }}
