@@ -3,7 +3,7 @@ import React from 'react';
 function Header(props) {
     return (
         <h2>
-            Expense Tracking App
+            Expense Tracking App v1
         </h2>
     );
 }
